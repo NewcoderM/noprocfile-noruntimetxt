@@ -1,56 +1,65 @@
+import tkinter as tk
+
+# Define calculator functions
 def add(x, y):
-    """Return the sum of x and y."""
     return x + y
 
 def subtract(x, y):
-    """Return the difference of x and y."""
     return x - y
 
 def multiply(x, y):
-    """Return the product of x and y."""
     return x * y
 
 def divide(x, y):
-    """Return the division of x by y. Handle division by zero."""
     if y == 0:
         return "Error! Division by zero."
     return x / y
 
-def calculator():
-    """Simple calculator that performs basic arithmetic operations."""
-    print("Simple Calculator")
-    print("Select operation:")
-    print("1. Add")
-    print("2. Subtract")
-    print("3. Multiply")
-    print("4. Divide")
+def calculate():
+    try:
+        num1 = float(entry1.get())
+        num2 = float(entry2.get())
+        operation = operation_var.get()
+        
+        if operation == 'Add':
+            result = add(num1, num2)
+        elif operation == 'Subtract':
+            result = subtract(num1, num2)
+        elif operation == 'Multiply':
+            result = multiply(num1, num2)
+        elif operation == 'Divide':
+            result = divide(num1, num2)
+        
+        result_label.config(text=f"Result: {result}")
+    except ValueError:
+        result_label.config(text="Invalid input! Please enter numeric values.")
 
-    while True:
-        choice = input("Enter choice (1/2/3/4): ")
+# Create the main window
+root = tk.Tk()
+root.title("Simple Calculator")
 
-        if choice in ['1', '2', '3', '4']:
-            try:
-                num1 = float(input("Enter first number: "))
-                num2 = float(input("Enter second number: "))
-            except ValueError:
-                print("Invalid input! Please enter numeric values.")
-                continue
+# Create input fields and labels
+tk.Label(root, text="First Number:").pack()
+entry1 = tk.Entry(root)
+entry1.pack()
 
-            if choice == '1':
-                print(f"{num1} + {num2} = {add(num1, num2)}")
-            elif choice == '2':
-                print(f"{num1} - {num2} = {subtract(num1, num2)}")
-            elif choice == '3':
-                print(f"{num1} * {num2} = {multiply(num1, num2)}")
-            elif choice == '4':
-                print(f"{num1} / {num2} = {divide(num1, num2)}")
-        else:
-            print("Invalid choice! Please select a valid operation.")
+tk.Label(root, text="Second Number:").pack()
+entry2 = tk.Entry(root)
+entry2.pack()
 
-        next_calculation = input("Do you want to perform another calculation? (yes/no): ")
-        if next_calculation.lower() != 'yes':
-            print("Thank you for using the calculator. Goodbye!")
-            break
+# Create a dropdown menu for operations
+operation_var = tk.StringVar(root)
+operation_var.set("Add")  # default value
+operations_menu = tk.OptionMenu(root, operation_var, "Add", "Subtract", "Multiply", "Divide")
+operations_menu.pack()
 
-if __name__ == "__main__":
-    calculator()
+# Create a button to perform the calculation
+calculate_button = tk.Button(root, text="Calculate", command=calculate)
+calculate_button.pack()
+
+# Create a label to display the result
+result_label = tk.Label(root, text="Result: ")
+result_label.pack()
+
+# Run the application
+root.mainloop()
