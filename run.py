@@ -1,23 +1,23 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
-
-
 def add(x, y):
+    """Return the sum of x and y."""
     return x + y
 
 def subtract(x, y):
+    """Return the difference of x and y."""
     return x - y
 
 def multiply(x, y):
+    """Return the product of x and y."""
     return x * y
 
 def divide(x, y):
+    """Return the division of x by y. Handle division by zero."""
     if y == 0:
         return "Error! Division by zero."
     return x / y
 
 def calculator():
+    """Simple calculator that performs basic arithmetic operations."""
     print("Simple Calculator")
     print("Select operation:")
     print("1. Add")
