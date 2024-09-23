@@ -1,4 +1,3 @@
-
 def add(x, y):
     """Return the sum of x and y."""
     return x + y
@@ -17,6 +16,16 @@ def divide(x, y):
         return "Error! Division by zero."
     return x / y
 
+def get_numbers():
+    """Get two numbers from the user."""
+    while True:
+        try:
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+            return num1, num2
+        except ValueError:
+            print("Invalid input! Please enter numeric values.")
+
 def calculator():
     """Simple calculator that performs basic arithmetic operations."""
     print("Simple Calculator")
@@ -30,12 +39,7 @@ def calculator():
         choice = input("Enter choice (1/2/3/4): ")
 
         if choice in ['1', '2', '3', '4']:
-            try:
-                num1 = float(input("Enter first number: "))
-                num2 = float(input("Enter second number: "))
-            except ValueError:
-                print("Invalid input! Please enter numeric values.")
-                continue
+            num1, num2 = get_numbers()
 
             if choice == '1':
                 print(f"{num1} + {num2} = {add(num1, num2)}")
