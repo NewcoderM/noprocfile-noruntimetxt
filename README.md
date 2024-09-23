@@ -38,7 +38,7 @@ Happy coding!
 3. when you press connect you will be in the setting page. important is the following to be added:
    <br>a. Build command: pip install -r requirements.txt && npm install
    <br>b. Start command: node index.js
-   <br>c. environment variables: <br> port;8000
+   <br>c. environment variables: port;8000 <br>
                              PYTHON_VERSION;3.10.7
 4. finished setting then press deploy web service butoon down in the page it will take you to the last page where you see your deployed link.
    I used the CI template on github after I deleted procfile and runtime.text files.
