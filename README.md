@@ -30,3 +30,15 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 ---
 
 Happy coding!
+
+
+## Deployment
+1. go to your account on render.com and press get started for free it will take you to the second page where you can see a New button in the navbar up , press it to have a dropdwn menue where you can choose web services.
+2. you can see here a box that shows github button press it and add your github project URL then down the box will be another button with the word connect. press it to connect your github to render. The connect button will not be activated till you choose a project from within the box.
+3. when you press connect you will be in the setting page. important is the following to be added:
+   a. Build command: pip install -r requirements.txt && npm install
+   b. Start command: node index.js
+   c. environment variables: port;8000
+                             PYTHON_VERSION;3.10.7
+4. finished setting then press deploy web service butoon down in the page it will take you to the last page where you see your deployed link.
+   I used the CI template on github after I deleted procfile and runtime.text files.
