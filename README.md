@@ -56,7 +56,7 @@ Mostly long lines in comments but all were delt with by adjusting content
 
 ![](media/after_test.PNG)
 
-In earlier version of this product I tried to include a data libray called tkinter as import in top line of my code. but the deployment on render crashed throwing an error message says that "my Python does not understand tkinter". So, after asking my mentor, tutors, my cohort facilitator and even some people on Slack, I was assured that as long it works then criteria are met. So, I removed the tkinter, which you can follow on the commit history on github.
+In earlier version of this product I tried to include a data libray called tkinter as import in top line of my code. But the deployment on render crashed throwing an error message says that "my Python does not understand tkinter". So, I removed the library. And after asking my mentor, tutors, my cohort facilitator and even some people on Slack, I was assured that as long it works then criteria are met. You can follow on the commit history on github.
 
 ## Deployment
 
