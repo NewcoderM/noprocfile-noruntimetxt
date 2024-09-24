@@ -1,6 +1,6 @@
 
 # Welcome to the Simple Calculator Website! 
-## This website allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
+This website allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
 View the live site here - <a href="https://simple-calculator-bj6j.onrender.com" target="_blank"> Simple Calculator </a>
 ![](media/mockup.PNG)
