@@ -82,6 +82,10 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 
 
 
-## Credits & Aknoledgment: 
-this project was inspired from code institute project Love Math which was written in Java. And I took it from there.
+## Credits: 
+
+This project was inspired from code institute project Love Math which was written in Java. And I took it from there.
+
+## Aknoledgment:
+
 I am grateful to the support I got from my mentor, tutors,cohort facilitator and evryone who answered me on Slack. Thank you.
