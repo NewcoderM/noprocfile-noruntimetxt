@@ -39,13 +39,18 @@ Multiplication: Multiply two numbers.
 Division: Divide one number by another, with error handling for division by zero.
 
 # Technologies used
-python
-github
-vscode
-gitpod
+python<br>
+github<br>
+vscode<br>
+gitpod<br>
 
 #Testing
+the test on https://pep8ci.herokuapp.com/# has resulted in some issues
+![](media/test_error.PNG)
+mostly long lines in comments but all were delt with by adjusting content
+![](media/after_test.PNG)
 
+in earlier version of this product I tried to include a data libray called tkinter as import in top line of my code. but the deployment on render crashed throwing an error message says that "my Python does not understand tkinter". So, after asking my mentor, tutors, my cohort facilitator and even some people on Slack, I was assured that as long it works then criteria are met. So, I removed the tkinter, which you can follow on the commit history on github.
 
 ## Deployment
 
@@ -79,3 +84,8 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 5. Change the current working directory to the location where you want the cloned directory to be made.
 6. Type git clone, and then paste the URL you copied in Step 3.
 7. Press Enter. Your local clone will be created
+
+
+## Credits & Aknoledgment: 
+this project was inspired from code institute project Love Math which was written in Java. And I took it from there.
+I am grateful to the support I got from my mentor, tutors,cohort facilitator and evryone who answered me on Slack. Thank you.
