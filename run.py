@@ -8,6 +8,8 @@ def add(x, y):
     float: The sum of x and y.
     """
     return x + y
+
+
 def subtract(x, y):
     """
     Return the difference of x and y.
@@ -18,6 +20,8 @@ def subtract(x, y):
     float: The difference between x and y.
     """
     return x - y
+
+
 def multiply(x, y):
     """
     Return the product of x and y.
@@ -28,6 +32,8 @@ def multiply(x, y):
     float: The product of x and y.
     """
     return x * y
+
+
 def divide(x, y):
     """
     Return the division of x by y. Handle division by zero.
@@ -40,6 +46,8 @@ def divide(x, y):
     if y == 0:
         return "Error! Division by zero is undefined."
     return x / y
+
+
 def get_float_input(prompt):
     """
     Get a float input from the user, ensuring valid numeric input.
@@ -53,6 +61,8 @@ def get_float_input(prompt):
             return float(input(prompt))
         except ValueError:
             print("Invalid input! Please enter a valid numeric value.")
+
+
 def get_operation_choice():
     """
     Get a valid operation choice from the user.
@@ -70,6 +80,8 @@ def get_operation_choice():
             return choice
         else:
             print("Invalid choice! Please select a valid operation (1/2/3/4).")
+
+
 def perform_calculation():
     """
     Perform a calculation based on the user's choice of operation.
@@ -93,6 +105,8 @@ def perform_calculation():
         result = divide(num1, num2)
         operation = "/"
     print(f"\nResult: {num1} {operation} {num2} = {result}")
+
+
 def confirm_continue():
     """
     Ask the user whether they want to perform another calculation.
@@ -107,6 +121,8 @@ def confirm_continue():
             return False
         else:
             print("Invalid input! Please enter 'yes' or 'no'.")
+
+
 def calculator():
     """
     Main calculator function that allows users to perform arithmetic operations.
@@ -121,5 +137,7 @@ def calculator():
         if not confirm_continue():
             print("\nThank you for using the calculator. Goodbye!")
             break
+
+
 if __name__ == "__main__":
     calculator()
