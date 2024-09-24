@@ -32,6 +32,8 @@ As a teacher, I want to recommend a simple online calculator to my students so t
 
 These user stories help in understanding the diverse needs of different users and ensuring the website meets those needs effectively.
 
+![](media/mainpage.PNG)
+
 # Features
 Addition: Add two numbers.
 Subtraction: Subtract one number from another.
@@ -39,18 +41,21 @@ Multiplication: Multiply two numbers.
 Division: Divide one number by another, with error handling for division by zero.
 
 # Technologies used
+
 python<br>
 github<br>
-vscode<br>
-gitpod<br>
 
 #Testing
-the test on https://pep8ci.herokuapp.com/# has resulted in some issues
+
+The test on https://pep8ci.herokuapp.com/# has resulted in some issues
+
 ![](media/test_error.PNG)
-mostly long lines in comments but all were delt with by adjusting content
+
+Mostly long lines in comments but all were delt with by adjusting content
+
 ![](media/after_test.PNG)
 
-in earlier version of this product I tried to include a data libray called tkinter as import in top line of my code. but the deployment on render crashed throwing an error message says that "my Python does not understand tkinter". So, after asking my mentor, tutors, my cohort facilitator and even some people on Slack, I was assured that as long it works then criteria are met. So, I removed the tkinter, which you can follow on the commit history on github.
+In earlier version of this product I tried to include a data libray called tkinter as import in top line of my code. but the deployment on render crashed throwing an error message says that "my Python does not understand tkinter". So, after asking my mentor, tutors, my cohort facilitator and even some people on Slack, I was assured that as long it works then criteria are met. So, I removed the tkinter, which you can follow on the commit history on github.
 
 ## Deployment
 
@@ -75,15 +80,6 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
-### Making a Local Clone
-
-1. Log in to GitHub and locate the GitHub Repository
-2. Under the repository name, click "Clone or download".
-3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-4. Open Git Bash
-5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type git clone, and then paste the URL you copied in Step 3.
-7. Press Enter. Your local clone will be created
 
 
 ## Credits & Aknoledgment: 
