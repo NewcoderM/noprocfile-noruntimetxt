@@ -58,6 +58,10 @@ Mostly long lines in comments but all were delt with by adjusting content
 
 In earlier version of this product I tried to include a data libray called tkinter as import in top line of my code. But the deployment on render crashed throwing an error message says that "my Python does not understand tkinter". So, I removed the library. And after asking my mentor, tutors, my cohort facilitator and even some people on Slack, I was assured that as long it works then criteria are met. You can follow on the commit history on github.
 
+# Manual Testing:
+I try to enter nothing for a number   - doesnt accept - pass test
+I try to divide by zero - doesnt accept - pass test
+
 ## Deployment
 
 The deployment done on render.com and github
@@ -87,6 +91,6 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 
 This project was inspired from code institute project Love Math which was written in Java. And I took it from there.
 
-## Aknoledgment:
+## Aknowledgement:
 
 I am grateful to the support I got from my mentor, tutors,cohort facilitator and evryone who answered me on Slack. Thank you.
