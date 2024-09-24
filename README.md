@@ -35,9 +35,9 @@ These user stories help in understanding the diverse needs of different users an
 ![](media/mainpage.PNG)
 
 # Features
-Addition: Add two numbers.
-Subtraction: Subtract one number from another.
-Multiplication: Multiply two numbers.
+Addition: Add two numbers.<br>
+Subtraction: Subtract one number from another.<br>
+Multiplication: Multiply two numbers.<br>
 Division: Divide one number by another, with error handling for division by zero.
 
 # Technologies used
@@ -45,7 +45,7 @@ Division: Divide one number by another, with error handling for division by zero
 python<br>
 github<br>
 
-#Testing
+# Testing
 
 The test on https://pep8ci.herokuapp.com/# has resulted in some issues
 
