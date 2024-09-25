@@ -1,3 +1,10 @@
+import datetime
+"""
+    importing a library to show date and time bevore
+    start doing math.
+    """
+
+
 def add(x, y):
     """
     Return the sum of x and y.
@@ -128,9 +135,12 @@ def calculator():
     Main calculator function that allows users to perform arithmeticoperations.
     This function will continue to prompt the user for operations
     and numbers until they decide to stop. The user can perform addition,
-    subtraction, multiplication, and division.
+    subtraction, multiplication, and division. And showing current time&date.
     """
-    print("Welcome to the Simple Calculator!")
+    now = datetime.datetime.now()
+    current_time = now.strftime("%Y-%m-%d %H:%M:%S")
+    print("Welcome to the Simple Calculator")
+    print(f"The current date and time is: {current_time}")
     while True:
         perform_calculation()
         # Ask if the user wants to continue
@@ -141,4 +151,3 @@ def calculator():
 
 if __name__ == "__main__":
     calculator()
-    
