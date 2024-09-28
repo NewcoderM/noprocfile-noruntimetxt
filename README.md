@@ -70,7 +70,6 @@ Mostly long lines in comments but all were delt with by adjusting content
 
 ![](media/after_test.PNG)
 
-In earlier version of this product I tried to include a data libray called tkinter as import in top line of my code. But the deployment on render crashed throwing an error message says that "my Python does not understand tkinter". So, I removed the library. And after asking my mentor, tutors, my cohort facilitator and even some people on Slack, I was assured that as long it works then criteria are met. You can follow on the commit history on github.
 
 ## Manual Testing:
 I tried to enter nothing for a number   - doesnt accept - pass test<br>
@@ -108,9 +107,10 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 
 ## Credits: 
 
-This project was inspired from code institute project [Love Math](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+3/courseware/2d651bf3f23e48aeb9b9218871912b2e/234519d86b76411aa181e76a55dabe70/) where the functions of a calculator were presented and explained but which in Javascript. I took it from there to create my python project.
-mockup was generated from [techsini.com](https://techsini.com/multi-mockup/index.php)
-Flowchart of logic was created with[Flodia Diagrams](https://www.bezapps.com/)
+. This project was inspired from code institute project [Love Math](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+3/courseware/2d651bf3f23e48aeb9b9218871912b2e/234519d86b76411aa181e76a55dabe70/) where the functions of a calculator were presented and explained but which in Javascript. I took it from there to create my python project.<br>
+. Mockup was generated from [techsini.com](https://techsini.com/multi-mockup/index.php) <br>
+. Flowchart of logic was created with[Flodia Diagrams](https://www.bezapps.com/) <br>
+.[CI Python lintor](https://pep8ci.herokuapp.com/#) was used to do the python code testing.
 
 ## Aknowledgement:
 
