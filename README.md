@@ -46,6 +46,20 @@ Division: Divide one number by another, with error handling for division by zero
 python<br>
 github<br>
 
+# Flowchart of logic:
+1. Start: The program begins.
+Welcome Message: Display a welcome message to the user.
+2. Perform Calculation:
+Get Operation Choice: Prompt the user to select an operation (Add, Subtract, Multiply, Divide).
+3. Get Numbers: Prompt the user to enter two numbers.
+4. Perform Operation: Based on the selected operation, perform the corresponding arithmetic operation.
+5. Display Result: Show the result of the operation.
+6. Continue?: Ask the user if they want to perform another calculation.
+A. If Yes, repeat the process from Perform Calculation.
+B. If No, display a thank you message and end the program.
+
+![](media/logic_chart.PNG)
+
 # Testing
 
 The test on https://pep8ci.herokuapp.com/# has resulted in some issues
@@ -94,7 +108,9 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 
 ## Credits: 
 
-This project was inspired from code institute project Love Math which was written in Java. And I took it from there.
+This project was inspired from code institute project [Love Math](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+3/courseware/2d651bf3f23e48aeb9b9218871912b2e/234519d86b76411aa181e76a55dabe70/) where the functions of a calculator were presented and explained but which in Javascript. I took it from there to create my python project.
+mockup was generated from [techsini.com](https://techsini.com/multi-mockup/index.php)
+Flowchart of logic was created with[Flodia Diagrams](https://www.bezapps.com/)
 
 ## Aknowledgement:
 
